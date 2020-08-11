@@ -1,0 +1,100 @@
+.objects
+  &-banner
+    height: 508px
+    background-image: url('/img/banner.jpg')
+    background-size: contain 100%
+    background-repeat: no-repeat
+    background-position: 100% 30%
+    background-color: #030303
+    text-align: center
+    display: flex
+    align-items: center
+    h2
+      font-family: 'Montserrat', sans-seriff
+      font-size: 48px
+      text-transform: uppercase
+      color: $text-color-white
+    p
+      font-family: 'Montserrat', sans-serif
+      font-size: 16px
+      color: $text-color-white
+      line-height: 30px
+.sorting
+  margin-top: 5rem!important
+  &-category
+    display: flex
+    justify-content: center
+    border-top: 2px solid #dcdcdc
+    border-bottom: 2px solid #dcdcdc
+    
+    &_block
+      display: flex
+      align-items: center
+      margin-right: 6rem
+      flex-direction: column
+      margin-top: 2.4rem
+      margin-bottom: 2.4rem
+      transition: all 0.3s
+      position: relative
+  
+      &_list
+        display: none
+        background-color: #f1efef
+
+        margin-top: 3rem
+        width: 150px  
+        height: 200px
+        text-align: center
+        box-shadow: 0 0 8px rgba(0,0,0,0.5)
+        transition: all 0.3s
+        z-index: 1000
+        ul 
+          list-style-type: none
+          transition: all 0.3s
+          padding: 0
+          li
+            margin-bottom: 1rem 
+            a
+              text-decoration: none
+              font-family: 'Montserrat', sans-serif
+              font-size: 14px
+              text-transform: uppercase
+              font-weight: 600
+              color: $text-color-black
+            a:hover 
+              color: $active-color
+      &_title
+        display: flex
+        align-items: center
+        a 
+          text-decoration: none
+          font-family: 'Montserrat', sans-serif
+          font-size: 14px
+          text-transform: uppercase
+          font-weight: 600
+          color: #adadad
+        a:hover 
+          color: $text-color-black
+        a:focus
+          color: $text-color-black
+        img 
+          margin-left: 1rem
+          width: 11px
+          height: 6px
+    &_block:hover
+      .sorting-category_block_list
+        display: block
+        transition: all 0.3s linear
+        
+      img
+        transform: rotate(-180deg)
+        transition: all 0.3s linear
+.img-active
+  transform: rotate(-180deg)
+  transition: all 0.3s
+  a:hover 
+    cursor: pointer
+    color: $active-color!important
+.border-none
+  border-bottom: none!important
+
